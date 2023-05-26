@@ -2,10 +2,14 @@ drop USER marcio;
 --criar usuario de banco de dados--
 CREATE USER marcio WITH
   CREATEDB, CREATEROLE, PASSWORD '123456';
---
-
-
-
+---banco de dados "uvv"--
+CREATE DATABASE uvv
+  OWNER marcio
+  TEMPLATE template0
+  ENCODING 'UTF8'
+  LC_COLLATE 'pt_BR.UTF-8'
+  LC_CTYPE 'pt_BR.UTF-8'
+  CONNECTION LIMIT -1;
 
 
 
